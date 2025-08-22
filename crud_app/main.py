@@ -13,7 +13,6 @@ async def lifespan(app: FastAPI):
     # startup
     yield
     # shutdown
-    print("dispose engine")
     await db_helper.dispose()
 
 
