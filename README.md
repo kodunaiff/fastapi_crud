@@ -19,3 +19,11 @@ Database - tasks
 Username - user
 Password - password
 ```
+
+
+poetry add alembic
+cd crud_app
+alembic init -t async alembic 
+
+для форматирования кода
+poetry add --group dev black
