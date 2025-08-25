@@ -23,7 +23,10 @@ Password - password
 
 poetry add alembic
 cd crud_app
-alembic init -t async alembic 
+alembic init -t async alembic
+
+alembic revision --autogenerate -m "create tasks table"
+alembic upgrade head
 
 для форматирования кода
 poetry add --group dev black
