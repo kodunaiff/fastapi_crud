@@ -27,6 +27,8 @@ alembic init -t async alembic
 
 alembic revision --autogenerate -m "create tasks table"
 alembic upgrade head
+alembic downgrade -1
+alembic downgrade base
 
 для форматирования кода
 poetry add --group dev black
